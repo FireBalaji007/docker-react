@@ -7,4 +7,4 @@
     - docker build -t docker007guru/docker-react -f Dockerfile.dev .
 
   script:
-    - docker run -e CI=true docker007guru/docker-react npm run test
+    - docker run docker007guru/docker-react npm run test  -- --coverage
